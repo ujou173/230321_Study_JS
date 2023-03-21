@@ -16,9 +16,11 @@ function appendString(stringArray, callback) {
 };
 
 let bodyTemplate = ``;
-let resultCase = appendString(splitString(stringExample), function(body) {
+appendString(splitString(stringExample), function(body) {
   console.log(body); // 참깨빵위에순쇠고기패티두장특별한소스양상추치즈피클양파까지
-  bodyTemplate += body.substring(0, body.indexOf("티") + 1);
+  // indexOf 메서드를 통해 원하는 부분을 설정하고 substring으로 잘라낸다, split()을 여러번 사용하지 않아도 원하는 부분을 추출 가능
+  // id / pw 추출하는데 도움이 될 듯
+  bodyTemplate += body.substring(body.indexOf("패티") + 2, body.indexOf("양상추"));
   console.log(bodyTemplate); //참깨빵위에순쇠고기패티
 });
 
