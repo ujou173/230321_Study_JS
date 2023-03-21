@@ -18,7 +18,7 @@ function appendString(stringArray, callback) {
 let bodyTemplate = ``;
 let resultCase = appendString(splitString(stringExample), function(body) {
   console.log(body); // 참깨빵위에순쇠고기패티두장특별한소스양상추치즈피클양파까지
-  bodyTemplate += body.substring(0, body.indexOf("쇠") + 1);
+  bodyTemplate += body.substring(0, body.indexOf("티") + 1);
   console.log(bodyTemplate); //참깨빵위에순쇠고기패티
 });
 
