@@ -28,4 +28,5 @@ function elementMaker(string) {
   return `<div>${string}</div>`;
 }
 
+
 console.log(elementMaker(bodyTemplate)); //<div>참깨빵위에순쇠고기패티</div>
